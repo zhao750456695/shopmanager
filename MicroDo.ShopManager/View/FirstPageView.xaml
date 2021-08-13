@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="MicroDo.ShopManager.View.FirstPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MicroDo.ShopManager.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="White">
+        <Grid Margin="18">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <TextBlock Text="亲爱的用户，在使用生财智能商业管理系统之前，请完善您的基础信息，这些信息如下：" TextWrapping="Wrap" FontSize="18"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+
+                <Button Content="供应商信息" Height="38" FontSize="20" Margin="38"></Button>
+                <Button Content="商品信息" Height="38" FontSize="20"></Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+
+</UserControl>
