@@ -18,3 +18,6 @@ C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\App.b
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\Assets\Styles\DefaultStyle.baml
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\FirstPageView.g.cs
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\FirstPageView.baml
+C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\MicroDo.ShopManager.csprojAssemblyReference.cache
+C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\GoodsManager.g.cs
+C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\GoodsManager.baml

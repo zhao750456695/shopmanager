@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MicroDo.ShopManager.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,23 @@ namespace MicroDo.ShopManager.View
         public FirstPageView()
         {
             InitializeComponent();
+        }
+
+        private MainViewModel model;
+
+        public FirstPageView(MainViewModel model)
+        {
+            InitializeComponent();
+            this.model = model;
+        }
+
+        // 商品信息
+        private void goodsInfoBtn_click(object sender, RoutedEventArgs e)
+        {
+            Window w = ((ContentControl)this.Parent).Parent as Window;
+            Type type = Type.GetType("MicroDo.ShopManager.View.GoodsManager");
+            ConstructorInfo cti = type.GetConstructor(System.Type.EmptyTypes);
+            this.model.MainContent = (FrameworkElement)cti.Invoke(null);
         }
     }
 }

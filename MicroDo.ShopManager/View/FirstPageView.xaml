@@ -13,12 +13,26 @@
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
-            <TextBlock Text="亲爱的用户，在使用生财智能商业管理系统之前，请完善您的基础信息，这些信息如下：" TextWrapping="Wrap" FontSize="18"/>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
 
-                <Button Content="供应商信息" Height="38" FontSize="20" Margin="38"></Button>
-                <Button Content="商品信息" Height="38" FontSize="20"></Button>
-            </StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel>
+                    <TextBlock Text="亲爱的用户，欢迎您使用生财智能商业管理系统，我们为您准备了丰富的学习资源，可以帮助您轻松使用本系统，提升工作效率、创造更多财富：" TextWrapping="Wrap" FontSize="18"/>
+
+                    <Button Content="学习中心" Height="38" Width="88" FontSize="20" Margin="8"></Button>
+                </StackPanel>
+                
+                <TextBlock Text="在使用生财智能商业管理系统之前，请完善您的基础信息，这些信息如下：" TextWrapping="Wrap" FontSize="18" Grid.Row="1"/>
+                
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1">
+                    <Button Content="供应商信息" Height="48" FontSize="20" Margin="28"></Button>
+                    <Button Content="商品信息" Height="48" FontSize="20" Margin="28" Click="goodsInfoBtn_click"></Button>
+                </StackPanel>
+            </Grid>
+
         </Grid>
     </Border>
 

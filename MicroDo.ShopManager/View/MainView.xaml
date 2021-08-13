@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MicroDo.ShopManager.View"
         mc:Ignorable="d"
-        WindowState="Maximized" 
+        
         Topmost="True"
                 ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -123,7 +123,7 @@
                 </StackPanel>
 
 
-                <ContentControl Grid.Row="1" Content="{Binding MainContent}"/>
+                <ContentControl Name="contentControl" Grid.Row="1" Content="{Binding MainContent}"/>
 
             </Grid>
 

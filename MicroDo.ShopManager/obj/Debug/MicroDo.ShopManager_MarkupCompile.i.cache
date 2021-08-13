@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\App.xaml
-4-1540570727
+5949940587
 
-122120161583
+131731618453
 13-1142990016
-Assets\Styles\DefaultStyle.xaml;View\FirstPageView.xaml;View\LoginView.xaml;View\MainView.xaml;
+Assets\Styles\DefaultStyle.xaml;View\FirstPageView.xaml;View\GoodsManager.xaml;View\LoginView.xaml;View\MainView.xaml;
 
-False
+True
 
