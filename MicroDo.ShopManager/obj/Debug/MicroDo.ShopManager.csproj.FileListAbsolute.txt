@@ -21,3 +21,5 @@ C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\MicroDo.ShopManager.csprojAssemblyReference.cache
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\GoodsManager.g.cs
 C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\GoodsManager.baml
+C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\goodmanager\GoodsInfoView.g.cs
+C:\Users\My\source\repos\MicroDo.ShopManager\MicroDo.ShopManager\obj\Debug\View\goodmanager\GoodsInfoView.baml

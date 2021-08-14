@@ -6,7 +6,74 @@
              xmlns:local="clr-namespace:MicroDo.ShopManager.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="商品管理"></TextBlock>
-    </Grid>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+             
+                <ResourceDictionary>
+                    <Style TargetType="RadioButton" x:Key="NavButtonStyle">
+                        <Setter Property="Foreground" Value="Black"/>
+                        
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="RadioButton">
+                                    <Border Background="Transparent" CornerRadius="8" Name="back">
+                                        <ContentControl  Content="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="18,10" FontSize="18" Name="cont"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsChecked" Value="True">
+                                            <Setter TargetName="back" Property="Background" Value="#CE0000"/>
+                                            <Setter TargetName="cont" Property="Foreground" Value="White"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <ScrollViewer>
+            <Border Background="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                <Border BorderBrush="#CE0000" BorderThickness="0,0,3,0">
+                        <StackPanel Margin="10, 8,0, 8">
+                            <TextBlock Text="商品分类：" FontSize="22"></TextBlock>
+                            <RadioButton Content="商品类别" Style="{StaticResource NavButtonStyle}"  IsChecked="True"></RadioButton>
+                        <TextBlock Text="商品规格和单位：" FontSize="22"></TextBlock>
+                            <RadioButton Content="规格" Style="{StaticResource NavButtonStyle}" ></RadioButton>
+                            <RadioButton Content="单位" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <TextBlock Text="商品品牌：" FontSize="22"></TextBlock>
+                            <RadioButton Content="品牌" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <TextBlock Text="商品信息：" FontSize="22"></TextBlock>
+                            <RadioButton Content="商品信息" Style="{StaticResource NavButtonStyle}" Command="{Binding NavChangeCommand}" CommandParameter="GoodsInfoView"></RadioButton>
+                            <RadioButton Content="转为小包装" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <RadioButton Content="大小包装都销售" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <TextBlock Text="组合商品：" FontSize="22"></TextBlock>
+                            <RadioButton Content="捆绑销售" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <RadioButton Content="混合销售" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <RadioButton Content="拆分销售" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <RadioButton Content="礼盒/喜包" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <TextBlock Text="商品调价" FontSize="22"></TextBlock>
+                            <RadioButton Content="调价单" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                            <RadioButton Content="调价记录" Style="{StaticResource NavButtonStyle}"></RadioButton>
+                    </StackPanel>
+                    </Border>
+
+
+                    <ContentControl Grid.Column="1" Name="contentControl" Content="{Binding MainContent}"/>
+                </Grid>
+            </Border>
+    </ScrollViewer>
+
+
 </UserControl>

@@ -56,10 +56,14 @@
     </ApplicationDefinition>
     <Compile Include="Common\CommandBase .cs" />
     <Compile Include="Common\NotifyBase.cs" />
+    <Compile Include="ViewModel\goodsmanager\GoodsManagerViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\FirstPageView.xaml.cs">
       <DependentUpon>FirstPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\goodmanager\GoodsInfoView.xaml.cs">
+      <DependentUpon>GoodsInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GoodsManager.xaml.cs">
       <DependentUpon>GoodsManager.xaml</DependentUpon>
@@ -79,6 +83,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\FirstPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\goodmanager\GoodsInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
